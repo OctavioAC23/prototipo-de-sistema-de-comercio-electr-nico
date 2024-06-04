@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación de Compras</title>
+ 
+ <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  
+        <div class="form-content">
+          <div class="form-items">
+            <h3>Aplicación de Compras</h3>
+            <p>Captura de artículos</p>
+            
+            <form action="guardar_articulo.php" method="POST">
+              <div class="col-md-12">
+                <input class="form-control" name="nombre" type="text" id="nombre" placeholder="Nombre:" required>
+              </div>
+  
+              <div class="col-md-12">
+                <input class="form-control" name="descripcion" type="text" id="descripcion" placeholder="Descripción:" required>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" name="precio" type="number" id="precio" placeholder="Precio:" required>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" name="cantidad"type="number" id="cantidad" placeholder="Cantidad en almacén:" required>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" name="foto"  type="file" id="foto" accept="image/*" placeholder="Fotografía::" required>
+              </div>
+              <br>
+              <div class="form-button mt-3">
+                <input type="submit" class="btn btn-success form-control" name="Guardar">
+                <button id="Atras">Atras</button>
+                <script src="script.js"></script>
+              </div>
+            </form>  
+          </div>
+        </div>
+    
+ 
+</body>
+</html>

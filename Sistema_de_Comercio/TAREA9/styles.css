@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*,
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #152733;
+  overflow: hidden;
+}
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.form-holder .form-content {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-content .form-items {
+  border: 3px solid #fff;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  max-width: 750px;
+  border-radius: 10px;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.form-content h3 {
+  color: #fff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600px;
+  margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+  margin-bottom: 20px;
+}
+
+.form-content p {
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.form-content label,
+.was-validated .form-check-input:invalid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+  color: #fff;
+}
+
+.form-content input[type=text],
+.form-content input[type=number],
+.form-content input[type=file],
+.form-content select {
+  width: 80%;
+  padding: 6px 12px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 300px;
+  color: #8d8d8d;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #495056;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.form-content textarea {
+  position: static !important;
+  width: 80%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  font-size: 12px;
+  font-weight: 300px;
+  color: #8d8d8d;
+  outline: none;
+  resize: none;
+  height: 80px;
+  transition: none;
+  margin-bottom: 10px;
+}
+
+.form-content textarea:hover,
+.form-content textarea:focus {
+  border: 0;
+  background-color: #ebeff8;
+  color: #8d8d8d;
+}
+
+.mv-up {
+  margin-top: -6px !important;
+  margin-bottom: 6px !important;
+}
+
+.form-content {
+  max-width: 100%;
+  margin: 0 auto;
+}

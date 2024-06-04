@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación de Compras</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Cargar datos del carrito al hacer clic en el botón "Carrito de compra"
+      $("#carritoBtn").click(function() {
+        $.ajax({
+          url: "carrito.php",
+          type: "GET",
+          success: function(data) {
+            $("#carritoContenido").html(data);
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>  
+  <div class="form-content">
+    <div class="form-items">
+      <h3>Aplicación de Compras</h3>
+      <p>Compra de artículos</p>
+      
+      <form method="POST" action="buscar.php">
+        <input type="text" name="busqueda" style="width: 80%;" placeholder="Ingrese una palabra de búsqueda">
+        <button type="submit">Buscar</button>
+      </form>
+      
+      <button id="carritoBtn">Carrito de compra</button> 
+      <button id="Atras">Atras</button>
+      
+      <div id="carritoContenido">
+        <!-- Aquí se mostrará la lista de artículos en el carrito -->
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
